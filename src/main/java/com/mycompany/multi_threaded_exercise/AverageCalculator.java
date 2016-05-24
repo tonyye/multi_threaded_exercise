@@ -6,8 +6,12 @@ package com.mycompany.multi_threaded_exercise;
  */
 public class AverageCalculator {
 
-	public static void main(String[] args) {
-		double[] list = {1, 2, 3, 4, 5, 6, 7, 8, 9, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9};
-		double average = 0;
+	public double calculateAverage(double[] list) {
+		double total = 0;
+		int count = list.length;
+		for (double num : list) {
+			total += num;
+		}
+		return total/count;
 	}
 }
